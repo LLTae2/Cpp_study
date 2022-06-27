@@ -1,7 +1,6 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
 class String
 {
 private:
@@ -19,15 +18,16 @@ public:
         strcpy(str, s);
     }
     String(const String& s)
-    {
-        len = 
+    {   
+        len = s.len;
+        str = new char[len];
+        strcpy(str, s.str);
     }
     ~String()
     {
         delete[] str;
     }
 };
-
 int main(void)
 {
     String str1;
