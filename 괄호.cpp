@@ -23,7 +23,7 @@ int main()
                 else stk.pop();
             }
         }
-				if(!stk.empty()) cout << "NO" << '\n';
+		if(!stk.empty()) cout << "NO" << '\n';
         else if(flag == 0) cout << "YES" << '\n';
     }
     return 0;
